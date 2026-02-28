@@ -9,20 +9,6 @@ paletteContainer.addEventListener("click", function (e) {
   const colorElement = e.target.closest(".color");
 
   if (!colorBox) return;
-
-  // //if clicked on copybtn
-  // if (copyBtn) {
-  //   hexValue = copyBtn
-  //     .closest(".color-info")
-  //     .querySelector(".hex-value").textContent;
-  // } //if clicked on color box
-  // else if (colorElement) {
-  //   hexValue = colorBox
-  //     .querySelector(".color-info")
-  //     .querySelector(".hex-value").textContent;
-  // } else if (hex_value) {
-  //   hexValue = hex_value.textContent;
-  // }
   const hexValue = colorBox && colorBox.querySelector(".hex-value").textContent;
   if (!hexValue) return;
 
